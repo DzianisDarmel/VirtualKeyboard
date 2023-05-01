@@ -144,6 +144,7 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   const onKeyDown = (e) => {
+    e.preventDefault();
     const element = document.querySelector(`[data-key="${e.code}"]`);
     if (element) {
       checkKeyDown(element, e.code);
